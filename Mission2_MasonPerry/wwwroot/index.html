@@ -1,0 +1,60 @@
+﻿<!--Code Author: Mason Perry, 1/8/22
+    This is a little website about me built in ASP.NET-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>I Luv ASP.NET</title>
+    <link rel="icon" href="https://img.icons8.com/external-kmg-design-flat-kmg-design/32/000000/external-running-shoes-running-kmg-design-flat-kmg-design.png" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <h1>Mason Perry</h1>
+        <br />
+        <img id="meRunning" src="img/egypt_running.jpg" width="370" height="527" />
+        <br /><br />
+        <p>I like running.... a lot!</p>
+        <br />
+        <h2>What I hope to get out of IS 413...</h2>
+        <br />
+        <p>
+            Honestly, I am hoping that my confidence with strongly-typed languages will increase.
+            I took a Java class in 9th grade and that really soiled any hopes of me wanting to
+            program for my career. Luckily, IS 201 changed my mind and here I am! I'm also
+            hoping that this new framework will only help to build upon my web development and
+            programming skills.
+        </p>
+        <br />
+        <h2>Top 3 Desired Jobs Post School</h2>
+        <ul>
+            <li>1. BI Analyst for a Food Company</li>
+            <li>2. Front-End Developer</li>
+            <li>3. Data Analyst at Nike/Hoka/Brooks</li>
+        </ul>
+        <br />
+        <h2>Grade Calculator</h2>
+        <br />
+        <form>
+            <label for="gAssignments">Assignments:</label><br />
+            <input id="gAssignments" type="number" /><br />
+            <label for="gGroupProjects">Group Projects:</label><br />
+            <input id="gGroupProjects" type="number" /><br />
+            <label for="gQuizzes">Quizzes:</label><br />
+            <input id="gQuizzes" type="number" /><br />
+            <label for="gExams">Exams:</label><br />
+            <input id="gExams" type="number" /><br />
+            <label for="gIntex">INTEX:</label><br />
+            <input id="gIntex" type="number" /><br /><br />
+            <button type="button" id="btnSubmit" class="btn btn-primary">Calc Grade</button>
+        </form>
+        <br /><br />
+        <h4>Results</h4>
+        <p id="sOutput"></p>
+    </div>
+    <script src="lib/jquery/jquery-3.6.0.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/functions.js"></script>
+</body>
+</html>
