@@ -1,8 +1,10 @@
 ﻿/*Style sheet for project 1/8/22*/
+html {
+    margin: 25px;
+}
 
 body {
     background-color: lightgray;
-    margin: 10px;
     flex: auto;
     align-content: center;
 }
@@ -10,4 +12,8 @@ body {
 img {
     border-radius: 5px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+nav {
+    background-color: lightgrey;
 }

@@ -1,0 +1,31 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Grade Calculator";
+}
+
+@model Mission2_MasonPerry.Models.GradeCalcModel
+
+
+<br />
+<h2>Grade Calculator</h2>
+<br />
+<form method="post">
+    <label for="gAssignment">Assignments:</label><br />
+    <input id="gAssignment" asp-for="Assignment" type="number" /><br />
+    <label for="gGroupProjects">Group Projects:</label><br />
+    <input id="gGroupProjects" asp-for="GroupProjects" type="number" /><br />
+    <label for="gQuizzes">Quizzes:</label><br />
+    <input id="gQuizzes" asp-for="Quizzes" type="number" /><br />
+    <label for="gExams">Exams:</label><br />
+    <input id="gExams" asp-for="Exams" type="number" /><br />
+    <label for="gIntex">INTEX:</label><br />
+    <input id="gIntex" asp-for="Intex" type="number" /><br /><br />
+    <button type="submit" id="btnSubmit" class="btn btn-primary">Calc Grade</button>
+    <div asp-validation-summary="All"></div>
+</form>
+<br />
+<br />
+<h4>Results</h4>
+<p id="sOutput"></p>

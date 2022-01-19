@@ -51,6 +51,7 @@ $("#btnSubmit").click(function () {
     }
 
     //Make output string and send to html doc
-    sOutput = 'You managed a ' + fFinalGrade.toFixed(2) + '% which netted you a ' + sFinalGradeLetter + " in the class!"
-    $("#sOutput").html(sOutput)
+    sOutput = 'You managed a ' + fFinalGrade.toFixed(2) + '% which netted you a ' + sFinalGradeLetter + " in the class!";
+    $("#sOutput").html(sOutput);
+    sessionStorage.setItem('Output', sOutput)
 });

@@ -1,0 +1,32 @@
+﻿<!--Code Author: Mason Perry, 1/8/22
+    This is a little website about me built in ASP.NET-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+    <link rel="icon" href="https://img.icons8.com/external-kmg-design-flat-kmg-design/32/000000/external-running-shoes-running-kmg-design-flat-kmg-design.png" />
+    <link href="~/css/styles.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <nav class="navbar-collapse">
+            <a class="navbar-brand" asp-controller="Mason" asp-action="Index">Home</a>
+            <a class="navbar-brand" asp-controller="Mason" asp-action="GradeCalc">Grade Calculator</a>
+        </nav>
+    </header>
+    <div>
+        @RenderBody()
+    </div>
+
+    <footer class="blockquote-footer" style="text-align: center;">
+        <p>IS 414  |  Mason Perry  |  2022</p>
+    </footer>
+
+    <script src="~/lib/jquery/jquery-3.6.0.min.js"></script>
+    <script src="~/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/js/functions.js"></script>
+
+</body>
+</html>
